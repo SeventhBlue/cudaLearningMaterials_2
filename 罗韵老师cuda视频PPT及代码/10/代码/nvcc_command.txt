@@ -1,0 +1,1 @@
+nvcc -o test_opengl_cuda test_opengl_cuda.cu -lGL -lGLU -lglut -lGLEW

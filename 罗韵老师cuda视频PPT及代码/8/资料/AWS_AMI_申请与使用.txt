@@ -1,0 +1,7 @@
+如果希望使用老师的AWS上的镜像部署CUDA+MPI集群的请发送邮件到lauren.luo@foxmail.com
+邮件标题为：CUDA+[第N期]+姓名+AWS Account Number(全部是数字的那个，不是你的账号)
+
+得到共享镜像AMI后，通过AMI创建服务器1或者若干台
+1. 修改 “~/machinefile” 中的主机名，使用主机名为主机在AWS上的内网名称，如“IP-XX-XX-XX-XX”
+2. 在AWS控制台设置创建的主机所在是安全组（security group）中，in-bound和out-bound中添加ALL TCP选项，确保所有端口可用。
+3. 使用老师提供的GPU_2.pem代替yourkey.pem作为登陆的密钥

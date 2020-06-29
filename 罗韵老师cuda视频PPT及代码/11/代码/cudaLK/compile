@@ -1,0 +1,2 @@
+nvcc cudaLK.cu -c cudaLK.o -O2  -g
+nvcc -O2 cudaLK.o main.cc  -o cudaLK -lcudart -I/usr/local/cuda/include -L/usr/local/cuda/lib64 -lopencv_video -lopencv_imgproc -lopencv_imgcodecs -lopencv_core -lopencv_highgui -g
